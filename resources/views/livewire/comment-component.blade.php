@@ -12,9 +12,6 @@
                         <a class="card-link icon-link icon-link-hover" style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" wire:click="reply({{$comment->id}})" href="#">
                             Reply
                         </a>
-                        @if ($reply)
-                            @livewire('form-comment-component', ['post' => $post->id, 'parent' => $comment->id])
-                        @endif
                     </div>
                 </div>
             </div>
